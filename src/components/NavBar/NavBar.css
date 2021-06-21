@@ -1,0 +1,10 @@
+.nav {
+    list-style: none;
+    display: inline-block;
+    justify-content: space-between;
+}
+
+.nav li {
+    padding: 0.5vh 1vw;
+    float: left;
+}
