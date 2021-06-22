@@ -1,23 +1,28 @@
-import React, { useState } from 'react';
+import React from 'react';
+import './SearchBar.css';
 
-const searchtermvalue = (e) => {
-    const searchTerm = e.target.value;
-}
-
-export default function SearchBar(prop) {
-    const [search, setSearch] = useState("");
-    
-    const handleTermChange = (evt) => {
-        evt.preventDefault();
-
+class SearchBar extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            term: ""
+        }
+        this.handleSearchChange = this.handleSearchChange.bind(this);
     }
 
+    handleSearchChange(a) {
+        this.setState({term: a.target.value})
+    }
 
-    return (
-        <div>
-            <label for="sTerm"></label><br/>
-            <input type="text" value={searchtermvalue} /><br />
-            <p>{searchtermvalue}</p>
-        </div>
-    )
+    render() {
+        return (
+            <div className  ="search">
+                <label for="search"></label><br/>
+                <input type="search" id="search" value={this.state.term} onChange={this.handleSearchChange} placeholder="Search Your Mind" /><br />
+                {/* <p>{this.state.term}</p> */}
+            </div>
+        )
+    }
 }
+
+export default SearchBar;
