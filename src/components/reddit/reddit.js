@@ -1,26 +1,16 @@
 import React from 'react';
 
 
-export const API_ROOT = 'https://www.reddit.com';
+export const api_root = 'https://www.reddit.com';
 
-export const getSubredditPosts = async (subreddit) => {
-  const response = await fetch(`${API_ROOT}${subreddit}.json`);
-  const json = await response.json();
-
-  return json.data.children.map((post) => post.data);
-};
-
-export const getSubreddits = async () => {
-  const response = await fetch(`${API_ROOT}/subreddits.json`);
-  const json = await response.json();
-
-  return json.data.children.map((subreddit) => subreddit.data);
-  
-};
-
-export const getPostComments = async (permalink) => {
-  const response = await fetch(`${API_ROOT}${permalink}.json`);
-  const json = await response.json();
-
-  return json[1].data.children.map((subreddit) => subreddit.data);
-};
+export const getProfile = () => {
+  let profile = fetch(`${api_root}/u/deepfuckingvalue.json`)
+  console.log(profile);
+}
+// export const getSubredditPosts
+export const getSubreddits = () => {
+  let subreddit = fetch(`${api_root}/r/superstonk.json`);
+  console.log(subreddit);
+}
+// (getSubreddits())
+// export const getPostComment

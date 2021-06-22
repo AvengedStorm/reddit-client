@@ -12,12 +12,6 @@ function App() {
     <div className="App">
       <NavBar />
       <SearchBar />
-      <article>
-        <getSubredditPosts />
-      </article>
-      <aside>
-        <getSubreddits />
-      </aside>
     </div>
   );
 }
