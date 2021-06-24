@@ -1,0 +1,23 @@
+li .postPhoto {
+    display: block;
+    width: 400px;
+    height: 400px;
+    margin: auto;
+}
+
+li .postVideo {
+    display: block;
+    width: 400px;
+    height: 400px;
+    margin: auto;
+}
+
+.postItem {
+    text-decoration: none;
+    text-align: center;
+}
+
+.postLink {
+    text-decoration: none;
+    text-align: center;
+}

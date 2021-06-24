@@ -13,16 +13,3 @@ export const getSubredditPosts = (name, cb) => {
     s.json().then(cb);
   })
 }
-
-
-/*
-getSubreddits((result) => {
-  console.log(result);
-});
-
-getSubredditPosts("memes", (result) => {
-  console.log(result);
-});
-
-
-*/

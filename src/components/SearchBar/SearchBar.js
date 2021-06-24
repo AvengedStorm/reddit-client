@@ -1,10 +1,6 @@
 import React, { useState } from 'react';
 import './SearchBar.css';
 
-const openLink = (url) => {
-    window.open(url,'_blank')
-}
-
 const handleSubmit = (term, props) => {
     // console.log(term);
     const api_root = "https://www.reddit.com"
