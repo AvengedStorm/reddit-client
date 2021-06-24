@@ -1,17 +1,22 @@
-import React from 'react';
-import { Counter } from './features/counter/Counter';
+import React, {useState} from 'react';
 import './App.css';
 import NavBar from "./components/NavBar/NavBar";
-import { useDispatch, useSelector } from "react-redux";
 import SearchBar from "./components/SearchBar/SearchBar";
+import Posts from './components/reddit/posts/Posts';
+import {Menu} from './components/menu/menu';
 
-import { getPostComments, getSubredditPosts, getSubreddits } from './components/reddit/reddit';
+let changefunc = (e) => {
+  console.log(e.target.value)
+}
 
 function App() {
+  const [posts, setPosts] = useState([]);
   return (
     <div className="App">
       <NavBar />
-      <SearchBar />
+      <Menu updatePosts={setPosts}/>
+      <Posts posts={posts}/>
+      <SearchBar onChange={setPosts} />
     </div>
   );
 }

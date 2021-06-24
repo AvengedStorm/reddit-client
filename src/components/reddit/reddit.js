@@ -3,14 +3,26 @@ import React from 'react';
 
 export const api_root = 'https://www.reddit.com';
 
-export const getProfile = () => {
-  let profile = fetch(`${api_root}/u/deepfuckingvalue.json`)
-  console.log(profile);
+export const getSubreddits = (cb) => {
+  fetch(`${api_root}/subreddits.json`).then(s => {
+    s.json().then(cb)
+  })
 }
-// export const getSubredditPosts
-export const getSubreddits = () => {
-  let subreddit = fetch(`${api_root}/r/superstonk.json`);
-  console.log(subreddit);
+export const getSubredditPosts = (name, cb) => {
+  fetch(`${api_root}/r/${name}.json`).then(s => {
+    s.json().then(cb);
+  })
 }
-// (getSubreddits())
-// export const getPostComment
+
+
+/*
+getSubreddits((result) => {
+  console.log(result);
+});
+
+getSubredditPosts("memes", (result) => {
+  console.log(result);
+});
+
+
+*/

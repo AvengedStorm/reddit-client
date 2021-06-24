@@ -14,7 +14,7 @@ export class NavBar extends React.Component {
         return (
             <div className="nav" id="nav">
                 <a href="#"><img src={logo} className="App-logo" alt="logo" /></a>
-                <a href="#" style={{textDecoration:"none"}} className="h1"><h1>Redditly</h1></a>
+                    <h1>Redditly</h1>
             </div>
         )
     }

@@ -1,37 +1,17 @@
-import React, {useState} from 'react';
+import React from 'react';
 
-export const posts = (props) => {
-    const [state, setState] = useState('');
+export default (props) => {
     return (
-        <div className  ="search">
-            <label htmlFor="search"></label><br/>
-            <input type="search" id="search" value={state.term} onChange={handleSearchChange} placeholder="Search Your Mind" /><br />
-            <button type="submit" onClick={handleSubmit}>Banana</button>
+        <div>
             <ul>
-                {this.state.data.children.map(el => 
-                                                <li className="postItem" key={el}>
-                                                    <div>
-                                                        <a href={el.data.url}>
-                                                            {el.data.title}
-                                                        </a>
-                                                        <img src={el.data.} />
-                                                    </div>
-                                                </li>)}
-                </ul>    
-            </div>
-        )
-    }
-
-    const handleSubmit = (e) => {
-        const [state, setState] = useState('');
-        let s = state;
-        e.preventDefault();
-        const api_root = 'https://www.reddit.com';
-        fetch(`${api_root}/r/${state.term}.json`).then((s) => {
-            s.json().then(result => setState({...s, data: result.data}));
-        });
-    }
-
-    const handleSearchChange = (e) => {
-        setState({term: e.target.value})
-    }
+                {props.posts.map(el => 
+                    <li className="postItem" key={el}>
+                        <a href={el.data.url}>
+                            {el.data.title}
+                        </a>
+                        {el.data.thumbnail != "self" ? (<img className="postPhoto" src={el.data.thumbnail} />):<></>}
+                    </li>)}
+            </ul>
+        </div>
+    )
+}
