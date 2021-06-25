@@ -20,7 +20,7 @@ export default (props) => {
                             :
                             <></>}
                         {el.data.url != "self" && el.data.is_video == true ? 
-                            (<video src={el.data.url} type="video/mp4" className="postVideo" key={el} controls>
+                            (<video src={el.data.secure_media.reddit_video.scrubber_media_url} type="video/mp4" className="postVideo" key={el} controls>
                                 Your browser is not supporting a video tag
                             </video>):<></>}
                     </article>)}
