@@ -8,15 +8,15 @@
     position: fixed;
     float: right;
     top: 1vh;
-    right: 1vw;
+    right: 2vw;
     margin: auto;
 }
 
 .w3-round-xxlarge {
-    width: 192px;
+    width: 130px;
     height: 21px;
     position: fixed;
-    right: 2.8vw;
+    right: 4vw;
     top: 2vh;
     float: right;
     box-sizing: content-box;
