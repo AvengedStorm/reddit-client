@@ -1,43 +1,31 @@
-.search {
-    margin: auto;
-    height: 10vh;
-}
+/* Search bar design */
 
-.postItem {
-    list-style: none;
-    border: orchid 2px solid;
-    border-radius: 1px 15px 15px 15px;
-    padding: 1vh 0;
-    margin: 2vh auto;
-    text-align: left;
-    max-width: 70vw;
-    min-width: 30vw;
-    color: black;
-}
-.postTitle {
-    margin-left: 2vw;
-    text-decoration: none;
-    color: black;
-}
-
-.searchButton {
-    width: 5vw;
-    max-height: 5vh;
+.searchIcon {
+    /* color: crimson; */
+    /* background-image: url("searchIcon.png"); */
+    width: 30px;
+    height: 30px;
     position: fixed;
     float: right;
     top: 1vh;
     right: 1vw;
+    margin: auto;
 }
 
-.searchInput {
-    width: 10vw;
-    max-height: 5vh;
+.w3-round-xxlarge {
+    width: 192px;
+    height: 21px;
     position: fixed;
-    right: 6vw;
-    top: 1vh;
+    right: 2.8vw;
+    top: 2vh;
     float: right;
+    box-sizing: content-box;
+    box-shadow: black;
 }
 
-.postTitle:visited {color:gainsboro;}
-.postTitle:active {color: red;}
-.postTitle:hover {color: red;}
+/* 
+input[type=text] {
+    box-sizing: content-box;
+    border: none;
+    border-bottom: black;
+} */

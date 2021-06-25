@@ -1,23 +1,58 @@
+/* posts, photos and videos */
+
 li .postPhoto {
     display: block;
-    width: 400px;
-    height: 400px;
+    width: 100%;
+    height: 100%;
     margin: auto;
-}
-
+  }
+  
 li .postVideo {
     display: block;
-    width: 400px;
-    height: 400px;
+    width: 100%;
+    height: 100%;
     margin: auto;
 }
 
+article.postPhoto, article.postVideo {
+    max-width: 1024px;
+    max-height: 1024px;
+    min-width: 512px;
+    min-height: 512px;
+}
+
+img.postPhoto {
+    width: 100%;
+    height: 100%;
+}
+
+video.postVideo {
+    width: 100%;
+    height: 100%;
+}
+  
 .postItem {
+    display: block;
+    width: 60%;
+    list-style: none;
+    border: crimson 2px solid;
+    border-radius: 35px;
+    margin: 2vh auto;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
     text-decoration: none;
     text-align: center;
+    padding: 20px;
 }
+
+.postItem:hover {
+    background-color: crimson;
+}
+
+.postLink:visited {color:black;}
+.postLink:active, .postLink:hover {color: whitesmoke;}
 
 .postLink {
     text-decoration: none;
-    text-align: center;
 }

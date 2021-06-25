@@ -3,7 +3,7 @@ import './App.css';
 import NavBar from "./components/NavBar/NavBar";
 import SearchBar from "./components/SearchBar/SearchBar";
 import Posts from './components/reddit/posts/Posts';
-import {Menu} from './components/menu/menu';
+import Menu from './components/menu/menu';
 
 let changefunc = (e) => {
   console.log(e.target.value)

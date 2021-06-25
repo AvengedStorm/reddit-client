@@ -1,13 +1,12 @@
 .nav {
-    height: 10vh;
+    /* height: 10vh; */
+    /* background-color: rgb(199, 28, 28); */
+    /* position: fixed; */
+    width: 100%;
 }
 
 .nav h1 {
     padding: 0;
     margin: auto;
     width: 15vw;
-}
-
-.nav a:visited {
-    color: black;
 }

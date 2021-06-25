@@ -1,0 +1,13 @@
+.dropBG {
+    /* background-color: rgb(199, 28, 28); */
+    padding-bottom: 1vh;
+}
+
+.dropMenu, .dropOp {
+    border-radius: 20px;
+}
+
+option, select {
+    background-color: crimson;
+    color: whitesmoke;
+}

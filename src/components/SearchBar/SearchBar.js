@@ -14,8 +14,8 @@ export default (props) => {
 
     return (
         <div className  ="search">
-            <input className="searchInput" type="search" id="search" value={term} onChange={e => setTerm(e.target.value)} placeholder="Search Your Mind" /><br />    
-            <button className="searchButton" type="submit" onClick={handleSubmit.bind(null, term, props)}>SEARCH!</button>
+            <input className="w3-input w3-border w3-round-xxlarge" type="search" id="search" value={term} onChange={e => setTerm(e.target.value)} placeholder="Search Your Mind" /><br />    
+            <a href="#"><h1 className="searchIcon" onClick={handleSubmit.bind(null, term, props)}>&#128269;</h1></a>
         </div>
     )
 }
