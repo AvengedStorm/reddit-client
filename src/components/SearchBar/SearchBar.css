@@ -1,8 +1,6 @@
 /* Search bar design */
 
 .searchIcon {
-    /* color: crimson; */
-    /* background-image: url("searchIcon.png"); */
     width: 30px;
     height: 30px;
     position: fixed;

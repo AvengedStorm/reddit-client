@@ -46,13 +46,20 @@ video.postVideo {
     padding: 20px;
 }
 
+.commentsLogo {
+    width: 30px;
+    height: 30px;
+    float: right;
+}
+
+.postLink {
+    text-decoration: none;
+    float: left;
+}
+
 .postItem:hover {
     background-color: crimson;
 }
 
 .postLink:visited {color:black;}
 .postLink:active, .postLink:hover {color: whitesmoke;}
-
-.postLink {
-    text-decoration: none;
-}

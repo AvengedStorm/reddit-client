@@ -13,3 +13,8 @@ export const getSubredditPosts = (name, cb) => {
     s.json().then(cb);
   })
 }
+export const getPostsComments = (subreddit, id, title, cb) => {
+  fetch(`${api_root}/r/${subreddit}/comments/${id}/${title}.json`).then(s => {
+    s.json().then(cb);
+  })
+}
