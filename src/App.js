@@ -22,9 +22,7 @@ function App() {
     <div className="App">
       <NavBar 
       />
-      <Menu 
-      updatePosts={setPosts}
-      />
+      <Menu />
       <Posts 
       posts={posts}
       />

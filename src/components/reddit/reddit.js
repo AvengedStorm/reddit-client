@@ -9,12 +9,13 @@ export const getSubreddits = (cb) => {
   })
 }
 export const getSubredditPosts = (name, cb) => {
-  fetch(`${api_root}/r/${name}.json`).then(s => {
+  return fetch(`${api_root}/r/${name}.json`)
+  /*.then(s => {
     s.json().then(cb);
-  })
+  })*/
 }
 export const getPostsComments = (subreddit, id, title, cb) => {
-  fetch(`${api_root}/r/${subreddit}/comments/${id}/${title}.json`).then(s => {
-    s.json().then(cb);
-  })
+  let url = `${api_root}/r/${subreddit}/comments/${id}/${title}.json`;
+  console.log(url);
+  return fetch(url);
 }

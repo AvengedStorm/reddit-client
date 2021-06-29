@@ -7,6 +7,9 @@ function reducer(state = {
   subreddits: [],
 }, action){
 switch (action.type) {
+    case "updateComments":
+      state = {...state, comments: action.payload.comments}
+      break;
     case "updatePosts":
       if(action.payload.name != state.subreddit) {
         state = {...state, posts: action.payload.posts, subreddit: action.payload.name}
@@ -26,12 +29,12 @@ switch (action.type) {
 }
  
 const middlewares = [];
-
-    const enhancers = [applyMiddleware(...middlewares)];
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+    const enhancers = [applyMiddleware(...middlewares), ];
 
     const store = createStore(
       reducer,
-      applyMiddleware(thunk)
+      composeEnhancers(applyMiddleware(thunk))
     );
 
     // Extensions

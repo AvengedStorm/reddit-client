@@ -9,16 +9,15 @@ export const Menu = (props) => {
 
     const subs = useSelector(state => state.subreddits);
     const dispatch = useDispatch();
-    console.log('hi from render');
     return (
         <div>
             <select className="dropMenu" onChange={e => {
-                getSubredditPosts(e.target.value, (posts) => {
-                    dispatch({type: "updatePosts", payload: {name: e.target.value, posts: posts.data.children}})
-                });
+                getSubredditPosts(e.target.value).then(r => r.json().then(result => {
+                    dispatch({type: 'updatePosts', payload: {name: e.target.value, posts: result.data.children}});
+                }));
             }}>
                 {(subs || []).map(b => {
-                    return <option>{b.data.display_name}</option>
+                    return <option key={b}>{b.data.display_name}</option>
                 })}
             </select>
         </div>
