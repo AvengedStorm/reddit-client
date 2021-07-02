@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/reddit-client/static/css/main.80306d49.chunk.css",
+    "main.js": "/reddit-client/static/js/main.a3303eb4.chunk.js",
+    "main.js.map": "/reddit-client/static/js/main.a3303eb4.chunk.js.map",
+    "runtime-main.js": "/reddit-client/static/js/runtime-main.91d0fe86.js",
+    "runtime-main.js.map": "/reddit-client/static/js/runtime-main.91d0fe86.js.map",
+    "static/js/2.389efa16.chunk.js": "/reddit-client/static/js/2.389efa16.chunk.js",
+    "static/js/2.389efa16.chunk.js.map": "/reddit-client/static/js/2.389efa16.chunk.js.map",
+    "index.html": "/reddit-client/index.html",
+    "static/css/main.80306d49.chunk.css.map": "/reddit-client/static/css/main.80306d49.chunk.css.map",
+    "static/js/2.389efa16.chunk.js.LICENSE.txt": "/reddit-client/static/js/2.389efa16.chunk.js.LICENSE.txt",
+    "static/media/logo.7c81a6be.svg": "/reddit-client/static/media/logo.7c81a6be.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.91d0fe86.js",
+    "static/js/2.389efa16.chunk.js",
+    "static/css/main.80306d49.chunk.css",
+    "static/js/main.a3303eb4.chunk.js"
+  ]
+}
