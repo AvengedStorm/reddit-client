@@ -1,4 +1,8 @@
 /* posts, photos and videos */
+html {
+    background-color: rgb(100, 100, 100);
+    color: whitesmoke;
+}
 
 li .postPhoto {
     display: block;
@@ -38,7 +42,7 @@ video.postVideo {
     border: crimson 2px solid;
     border-radius: 35px;
     margin: 2vh auto;
-    color: black;
+    color: whitesmoke;
     font-size: 1.2rem;
     font-weight: bold;
     text-decoration: none;
@@ -62,8 +66,8 @@ video.postVideo {
     background-color: crimson;
 }
 
-.postLink:visited {color:black;}
-.postLink:active, .postLink:hover {color: whitesmoke;}
+/* .postLink:visited {color:black;}
+.postLink:active, .postLink:hover {color: whitesmoke;} */
 
 /* Dialog */
 
@@ -72,7 +76,6 @@ video.postVideo {
     height: 90%;
     border-radius: 40px;
     margin: auto;
-    background: rgba(224, 22, 62, 0.26);    
 }
 
 .commentsDialog {
@@ -89,10 +92,11 @@ video.postVideo {
 }
 
 .commentsArticle {
-    background-color: crimson;
+    background-color: rgb(100, 100, 100);
+    color: whitesmoke;
 }
 
 .commentAuthor, .commentKarma, .commentBody{
-    background-color: crimson;
+    background-color: rgb(100, 100, 100);
     color: whitesmoke
 }

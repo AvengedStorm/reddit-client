@@ -10,7 +10,7 @@ export const Menu = (props) => {
     const subs = useSelector(state => state.subreddits);
     const dispatch = useDispatch();
     return (
-        <div>
+        <div className="menu">
             <select className="dropMenu" onChange={e => {
                 getSubredditPosts(e.target.value).then(r => r.json().then(result => {
                     dispatch({type: 'updatePosts', payload: {name: e.target.value, posts: result.data.children}});
